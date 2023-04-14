@@ -1,9 +1,11 @@
 footer {
+    background-color: $color-secondary;
+    border-top: 2px solid black;
     p {
         color: $font-color-primary;
         font-size: $font-size-default;
         a {
-            color: $color-secondary;
+            color: $color-primary;
         }
     }
 }

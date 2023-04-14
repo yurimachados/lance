@@ -1,8 +1,15 @@
 #como-funciona {
-    background: $font-color-primary;
+    background: $color-primary;
+
+    h1 {
+        color: $color-secondary
+    }
 }
 
 .steps {
+    background-color: rgb(201, 201, 201);
+    border: 1px solid rgb(228, 160, 13);
+    border-radius: 20px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -10,6 +17,7 @@
     flex-direction: row;
 
     &__item {
+        // background-color: rgb(32, 121, 199);
         margin: 1rem;
         width: calc(80% / 5 - 1rem);
         text-align: center;
