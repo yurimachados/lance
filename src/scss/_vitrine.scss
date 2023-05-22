@@ -1,10 +1,25 @@
 .vitrine {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 3rem;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    @media (min-width: 767px) and (max-width: 1199px){
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        p{
+            text-align: center;
+        }
+    }
 
     &__item {
-        background-color: rgba(179, 113, 52, 0.2);
+        background-color: rgba(88, 76, 158, 0.2);
         border-radius: 1rem;
         display: flex;
         flex-flow: column;
@@ -38,6 +53,7 @@
         font-size: $font-size-default;
         margin-bottom: 3rem;
         padding: 0 1rem;
+        text-align: center;
     }
 
     &__button {
